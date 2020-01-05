@@ -1,6 +1,6 @@
 use Mix.Config
 
-config :todos, Todos.Repo,[
+config :romulus, Romulus.Repo,[
   adapter: Ecto.Adapters.Postgres,
   database: "todos_dev",
   username: "postgres",

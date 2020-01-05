@@ -1,4 +1,4 @@
-defmodule Todos.Repo.Migrations.AddTodos do
+defmodule Romulus.Repo.Migrations.AddTodos do
   use Ecto.Migration
 
   def change do

@@ -1,4 +1,4 @@
-defmodule Todos do
+defmodule Romulus do
   use Application
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
@@ -7,10 +7,10 @@ defmodule Todos do
     import Supervisor.Spec, warn: false
 
     children = [
-      supervisor(Todos.Repo, []),
+      supervisor(Romulus.Repo, []),
     ]
 
-    opts = [strategy: :one_for_one, name: Todos.Supervisor]
+    opts = [strategy: :one_for_one, name: Romulus.Supervisor]
     Supervisor.start_link(children, opts)
   end
 end

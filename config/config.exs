@@ -1,5 +1,5 @@
 use Mix.Config
 
-config :todos, :ecto_repos, [Todos.Repo]
+config :romulus, :ecto_repos, [Romulus.Repo]
 
 import_config "#{Mix.env}.exs"
